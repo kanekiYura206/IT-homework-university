@@ -2,13 +2,6 @@
 #include <math.h>
 #include <stdbool.h>
 
-enum Function {
-    SIN,
-    COS,
-    EXP,
-    SINH
-};
-
 double pow_over_fact(double x, int p) {
     double r = 1.0;
     for (int i = 1; i <= p; i++) r *= fabs(x) / i;
